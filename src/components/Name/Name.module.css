@@ -1,0 +1,13 @@
+.name,
+.name:visited {
+    text-decoration: none;
+    color: white;
+    letter-spacing: .05em;
+}
+
+.name:hover,
+.name:active,
+.name:focus {
+    text-decoration: underline;
+    color: lightpink;
+}
