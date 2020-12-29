@@ -12,6 +12,11 @@ function Home() {
         <li><Name name="Joseph"/></li>
         <li><Name name="Nakama"/></li>
       </ul>
+      <section className={styles.description}>
+        <p>I'm a software engineer by trade.</p>
+        <p>I'm a fine artist by fun.</p>
+        <p>I like dogs and cats and video games and my wife a lot.</p>
+      </section>
     </div>
   );
 }
