@@ -25,3 +25,28 @@
 .description {
     margin: 0 0 0 2rem;
 }
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .name {
+        align-items: center;
+        font-size: 80%;
+    }
+
+    .name li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .description {
+        margin: 1rem 0 0 0;
+    }
+
+    .description p {
+        text-align: center;
+        margin: .5rem;
+    }
+}
