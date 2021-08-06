@@ -5,6 +5,7 @@ import Name from '../Name/Name';
 import styles from './Home.module.css';
 
 function Home() {
+  console.log(process.env.NODE_ENV);
   return (
     <div className={`App ${styles.wrapper}`}>
       <ul className={styles.name}>
