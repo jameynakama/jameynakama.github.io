@@ -4,6 +4,8 @@ import './components/index.css';
 import Home from './components/Home/Home';
 import reportWebVitals from './reportWebVitals';
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
 ReactDOM.render(
   <React.StrictMode>
     <Home />
