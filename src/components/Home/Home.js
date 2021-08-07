@@ -1,5 +1,7 @@
 import React from 'react';
 
+import * as constants from '../../util/constants';
+
 import Name from '../Name/Name';
 
 import styles from './Home.module.css';
@@ -12,7 +14,7 @@ function Home() {
   }, [sentence]);
 
   const handleClick = async () => {
-    const response = await fetch("/randsense/api/v1/sentences/", {
+    const response = await fetch(`${constants.RANDSENSE_API_BASE}sentences/`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
@@ -21,8 +23,6 @@ function Home() {
     const data = await response.json();
     setSentence(data.sentence);
   }
-
-  console.log(process.env.NODE_ENV);
 
   return (
     <div className={`App ${styles.wrapper}`}>
