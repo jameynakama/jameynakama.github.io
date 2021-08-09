@@ -21,7 +21,7 @@ function Home() {
       },
     });
     const data = await response.json();
-    setSentence(data.sentence);
+    setSentence(data.inflected);
   }
 
   return (
