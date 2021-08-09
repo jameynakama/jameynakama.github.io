@@ -28,7 +28,7 @@ function Home() {
     <div className={`App ${styles.wrapper}`}>
       <ul className={styles.name}>
         <li><Name name="Jamey"/></li>
-        <li><Name name="Joseph"/></li>
+        <li><Name name="Joseph" url="https://randsense.online/"/></li>
         <li><Name name="Nakama" url="#" onClick={handleClick}/></li>
       </ul>
       <section className={styles.description}>
